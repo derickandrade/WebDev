@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body { 
+            background-color: black;
+            color: whitesmoke;
+            font: 25pt Arial; /* Comentário em CSS */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta consequuntur ipsam excepturi, laudantium optio eius vel saepe! Fuga nesciunt alias eaque libero aliquid illum molestias dolor mollitia? Harum, eveniet?</p> <!-- Comentário em HTML -->
+    <script>
+        //window.alert("Minha primeira mensagem!")
+        //window.confirm("Está gostando de JavaScript?")
+        var nome = window.prompt("Qual é o seu nome?")
+        window.alert("Bem vindo(a), " + nome + "!")
+        var num1 = Number.parseFloat(window.prompt("Digite um número: ")) 
+        // var num 1 = Number(window.prompt("Digite um número: "))
+        // String(num1) ou num1.toString()
+        var num2 = Number.parseFloat(window.prompt("Digite outro número: ")) 
+        // window.alert("A soma dos valores é " + (num1 + num2))
+        window.alert(`${num1} + ${num2} = ${num1 + num2}`)
+        
+        var s = 'JavaScript'
+        s.length // quantidade de caracteres
+        document.writeln(`${s} tem ${s.length} letras.`)
+        document.write(`Em maiúsculo: ${s.toUpperCase()} <br/>`)
+        document.write(`Em minúsculo: ${s.toLowerCase()} <br/>`)
+        s.toUpperCase() // tudo para maiúsculo
+        s.toLowerCase() // tudo para minúsculo
+        var num3 = 1500.5
+        document.write(`${num3} formatado: R$${num3.toFixed(2).replace('.', ',')} <br/>`)
+        document.write(`${num3.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
